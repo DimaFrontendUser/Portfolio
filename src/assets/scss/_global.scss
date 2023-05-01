@@ -1,0 +1,158 @@
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.5em;
+    color: $title;
+    padding: 25px 180px;
+    background-color: transparent;
+    border: 1px solid $title;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &:hover {
+        color: #F93C00;
+        border: 1px solid #F93C00;
+        transition-duration: 0.5s;
+    }
+}
+
+.rivers__arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-right {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #F93C00;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: url('../img/right_arrow1720.svg');
+            padding-left: 20px;
+        }
+        &:hover {
+            color: #FF6B3D;
+            transition-duration: 0.5s;
+        }
+    }
+    &-left {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #F93C00;
+        display: flex;
+        align-items: center;
+        &::before {
+            color: #FF6B3D;
+            content: url('../img/left_arrow1720.svg');
+            padding-right: 20px;
+        }
+        &:hover {
+            color: #FF6B3D;
+            transition-duration: 0.5s;
+        }
+    }
+}
+
+.lodge-navigation {
+    @extend %title-padding;
+    display: flex;
+    align-items: center;
+}
+.lodge__links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.lodge__link {
+    margin: 0 auto;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #C7D4DB;
+    border-bottom: 1px solid #C7D4DB;
+    &:last-child {
+        margin: 0;
+    }
+    &:hover {
+        border-bottom: 1px solid #F93C00;
+        color: #F93C00;
+        transition-duration: 0.3s;
+    }
+}
+.lodge__link--active{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #F93C00;
+    border: none;
+    &:hover {
+        border: none;
+    }
+}
+.lodge__title {
+    padding: 0;
+    font-weight: 300;
+}
+
+
+
+.title {
+    color: $title;
+    @extend %title-font;
+    @extend %title-padding;
+}
+.text {
+    @extend %text-font;
+    color: $text;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 150px;
+    right: 70px;
+    z-index: 5;
+}
+
+.isShowBtn {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    &-hide {
+        opacity: 0;
+    }
+}

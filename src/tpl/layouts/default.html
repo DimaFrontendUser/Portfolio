@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__body">
+                <div class="container">
+                    <div class="header__row">
+                        <div class="header__logo">
+                            <a href="main.html" class="header__logo-link">
+                                <picture>
+                                    <source media="(max-width: 1080px)" srcset="assets/img/logo768px.svg">
+                                    <source media="(min-width: 1080px)" srcset="assets/img/logo1024px.svg">
+                                    <img src="assets/img/logo1024px.svg">
+                                </picture>
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a href="rivers.html" class="menu__link">Rivers</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="kachkovka.html" class="menu__sub-link">Kachkovka</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="lumbovka.html" class="menu__sub-link">Lumbovka</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="olenka.html" class="menu__sub-link">Olenka</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="lodgePlan.html" class="menu__link">Lodge</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="lodgePlan.html" class="menu__sub-link">Lodge</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="housePlan.html" class="menu__sub-link">House</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="fishing.html" class="menu__link">Fishing</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="reports.html" class="menu__sub-link">Reports</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="leaderboard.html" class="menu__sub-link">Leadership</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="about.html" class="menu__link">About us</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="team.html" class="menu__sub-link">Team</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="history.html" class="menu__sub-link">Story</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="partners.html" class="menu__sub-link">Partnership</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="media.html" class="menu__sub-link">Media</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="photos.html" class="menu__link">Gallery</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="photos.html" class="menu__sub-link">Photos</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="videos.html" class="menu__sub-link">Videos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="info.html" class="menu__link">Travel info</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="contacts.html" class="menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__burger">                       
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            {{> body }}
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="footer__logo-top">
+                        <a href="main.html">
+                            <img class="footer__logo-img" src="assets/img/footer__logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer__row">
+                        <nav class="footer__menu">
+                            <ul class="footer__submenu-list">
+                                <li class="footer__submenu-item">
+                                    <a href="rivers.html" class="footer__submenu-link">Rivers</a>
+                                    <ul class="footer__submenu-sublist">
+                                        <li class="footer__submenu-subitem">
+                                            <a href="lumbovka.html" class="footer__submenu-sublink">Lumbovka
+                                            </a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="kachkovka.html" class="footer__submenu-sublink">Kachovka</a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="olenka.html" class="footer__submenu-sublink">Olenka</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="lodgePlan.html" class="footer__submenu-link">Lodge</a>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="fishing.html" class="footer__submenu-link">Fishing</a>
+                                    <ul class="footer__submenu-sublist">
+                                        <li class="footer__submenu-subitem">
+                                            <a href="reports.html" class="footer__submenu-sublink">Reports
+                                            </a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="leaderboard.html" class="footer__submenu-sublink">Leadership</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="#" class="footer__submenu-link">About us</a>
+                                    <ul class="footer__submenu-sublist">
+                                        <li class="footer__submenu-subitem">
+                                            <a href="team.html" class="footer__submenu-sublink">Team
+                                            </a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="history.html" class="footer__submenu-sublink">Story</a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="partners.html" class="footer__submenu-sublink">Partnership</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="photos.html" class="footer__submenu-link">Gallery</a>
+                                    <ul class="footer__submenu-sublist">
+                                        <li class="footer__submenu-subitem">
+                                            <a href="photos.html" class="footer__submenu-sublink">Photos
+                                            </a>
+                                        </li>
+                                        <li class="footer__submenu-subitem">
+                                            <a href="videos.html" class="footer__submenu-sublink">Videos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="info.html" class="footer__submenu-link">Travel info
+                                    </a>
+                                </li>
+                                <li class="footer__submenu-item">
+                                    <a href="contacts.html" class="footer__submenu-link">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="social">
+                            <div class="social__body">
+                                <div class="social__text">
+                                    Follow us to get the latest updates:
+                                </div>
+                                <div class="social__icon">
+                                    <a href="#" class="social__link">
+                                        <img src="assets/img/facebook.svg" alt="social" class="social__img">
+                                    </a>
+                                    <a href="#" class="icon__link">                            
+                                        <img src="assets/img/instagramm.svg" alt="social" class="social__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__logo-bottom">
+                            <a href="main.html"><img src="assets/img/footer__logo.svg" alt="logo"class="footer__logo-img"></a>
+                        </div>
+                        <div class="footer__rights">
+                            <p>The information in this website is updated every week.</p>
+                            <p>All fights reserved. Website is made by Sitebuilders in 2021.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>
